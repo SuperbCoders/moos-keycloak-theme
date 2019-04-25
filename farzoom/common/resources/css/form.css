@@ -1,0 +1,11 @@
+.form-group a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 auto 10px;
+    font-size: 12px;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
