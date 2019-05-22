@@ -1,0 +1,244 @@
+.fr-app.fr-login {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 660px;
+    background-color: #242232;
+}
+
+.fr-app.fr-login .fr-login-sidebar {
+    position: relative;
+    width: 60%;
+    min-width: 34rem;
+}
+
+.fr-app.fr-login .fr-login-sidebar__logo {
+    position: absolute;
+    top: 85px;
+    left: 20%;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login input:-webkit-autofill,
+.fr-app.fr-login .fr-login-sidebar .form-login input:-webkit-autofill:hover,
+.fr-app.fr-login .fr-login-sidebar .form-login input:-webkit-autofill:focus,
+.fr-app.fr-login .fr-login-sidebar .form-login input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    -o-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-group__row-input {
+    position: relative;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-group__row-input .icon {
+    position: absolute;
+    font-size: 16px;
+    color: #7e7c86;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-group__row-input .icon-user-1 {
+    top: 12px;
+    left: 12px;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-group__row-input .icon-locker {
+    top: 11px;
+    left: 12px;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-group__row-input .icon-eye {
+    top: 13px;
+    right: 12px;
+    color: #616065;
+    cursor: pointer;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.08);
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    padding: 0 2.75rem;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:focus,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:hover,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:focus,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:hover,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:focus,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:hover,
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill:focus {
+    border: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+    background: transparent !important;
+    -webkit-background-image: none !important;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control::-moz-placeholder {
+    color: #fff;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-ms-input-placeholder {
+    color: #fff;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control:-moz-placeholder {
+    color: #fff;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control--login {
+    -webkit-border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 1px;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-control--password {
+    -webkit-border-radius: 0 0 12px 12px;
+    border-radius: 0 0 12px 12px;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-login-bottom {
+    margin-top: 2rem;
+    opacity: 0.8;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-align: center;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-login-bottom > a {
+    display: inline-block;
+    padding-right: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .form-login-bottom > a:hover {
+    text-decoration: underline;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .btn {
+    height: 3rem;
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .btn .icon {
+    font-size: 0.625rem;
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .btn-danger {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #ff0000;
+}
+
+.fr-app.fr-login .fr-login-sidebar .form-login .btn-dark {
+    margin-top: 1rem;
+    font-size: 12px;
+    line-height: 1.33;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.fr-app.fr-login .fr-login-sidebar__bottom {
+    position: absolute;
+    bottom: 1rem;
+    padding: 0 19%;
+}
+
+.fr-app.fr-login .fr-login-sidebar__bottom > span,
+.fr-app.fr-login .fr-login-sidebar__bottom > a {
+    font-size: 11px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.18;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.32);
+}
+
+.fr-app.fr-login .fr-login-sidebar__bottom > a {
+    display: inline-block;
+    margin-left: 17px;
+    text-decoration: none;
+}
+
+.fr-app.fr-login .fr-login-sidebar__bottom > a:hover {
+    text-decoration: underline;
+}
+
+.fr-app.fr-login .fr-login-block {
+    width: 100%;
+    padding: 0 100px 0 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url("../img/login-bg.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.fr-app.fr-login .fr-login-block > h1 {
+    margin-top: -10%;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    color: #fff;
+}
+
+.fr-login-form-container {
+    padding: 220px 19% 100px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
