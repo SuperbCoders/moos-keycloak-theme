@@ -79,7 +79,7 @@
 }
 
 .fr-app.fr-login .fr-login-sidebar .form-login .form-control:-webkit-autofill {
-    -webkit-text-fill-color: #fff !important;
+    -webkit-text-fill-color: #fff;
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
 }
@@ -241,4 +241,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#username, #password {
+    -webkit-text-fill-color: grey;
 }

@@ -17,6 +17,17 @@
                         <span class="icon icon-eye"></span>
                         <input id="password" name="password" type="password" class="form-control form-control--password" aria-describedby="password" placeholder="${msg('password')}" autocomplete="off" aria-autocomplete="none">
                     </div>
+                    <script type="text/javascript">
+                        const classname = document.querySelector('.icon-eye');
+                        classname.addEventListener("click", function() {
+                            const $password = document.getElementById("password");
+                            if ($password.type === 'password') {
+                                $password.type = 'text';
+                            } else {
+                                $password.type = 'password';
+                            }
+                        }, false);
+                    </script>
                 </div>
                 <div class="form-group mr-tp2">
                     <button class="btn btn-danger btn-block" type="submit" name="login" id="kc-login">${msg('doLogIn')} <span class="icon icon-chevron-right"></span></button>
@@ -26,7 +37,6 @@
                     <#if realm.resetPasswordAllowed>
                         <a href="${url.loginResetCredentialsUrl}">${msg('doForgotPassword')}</a>
                     </#if>
-                    <span>${msg('supportText')}: +7 (495) 799–09–83</span>
                 </div>
 
                 <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>

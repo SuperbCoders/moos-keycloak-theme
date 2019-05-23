@@ -53,7 +53,7 @@
 
             <!-- END/ Login form -->
             <div class="fr-login-sidebar__bottom">
-                <span>FarZoom 2018 © &nbsp; v. 1.2.9.1 ßeta 2 </span>
+                <span>FarZoom 2019 © &nbsp; v. 1.2.9.1</span>
                 <a href="mailto:support@farzoom.com">support@farzoom.com</a>
             </div>
         </section>
