@@ -1,0 +1,46 @@
+.admin-console header {
+    background-color: #242232;
+}
+.admin-console a {
+    color: white;
+}
+.admin-console .fr-app {
+     color: white;
+ }
+
+.admin-console .fr-app .container {
+    color: white;
+}
+
+.admin-console .navbar-default .bs-sidebar {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+.admin-console .navbar-default .bs-sidebar ul li {
+    display: inline;
+    color: white;
+}
+
+.admin-console .navbar-default .bs-sidebar ul li a{
+    color: white;
+    padding: 10px;
+}

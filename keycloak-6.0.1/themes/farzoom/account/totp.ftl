@@ -68,28 +68,21 @@
 
 <hr/>
 
-<form action="${url.totpUrl}" class="form-horizontal" method="post">
+<form action="${url.totpUrl}" method="post">
     <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
-    <div class="form-group">
-        <div class="col-sm-2 col-md-2">
-            <label for="totp" class="control-label">${msg("authenticatorCode")}</label>
-            </div>
-
-        <div class="col-sm-10 col-md-10">
-            <input type="text" class="form-control" id="totp" name="totp" autocomplete="off" autofocus autocomplete="off">
-            <input type="hidden" id="totpSecret" name="totpSecret" value="${totp.totpSecret}" />
-            </div>
-        </div>
 
     <div class="form-group">
-        <div id="kc-form-buttons" class="col-md-offset-2 col-md-10 submit">
-            <div class="">
-                <button type="submit" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="submitAction" value="Save">${msg("doSave")}</button>
-                <button type="submit" class="${properties.kcButtonClass!} ${properties.kcButtonDefaultClass!} ${properties.kcButtonLargeClass!}" name="submitAction" value="Cancel">${msg("doCancel")}</button>
-                </div>
-            </div>
+        <input type="text" class="form-control form-control--transporent" id="totp" name="totp" placeholder="${msg("authenticatorCode")}" autocomplete="off" autofocus autocomplete="off">
+        <input type="hidden" id="totpSecret" name="totpSecret" value="${totp.totpSecret}" />
+    </div>
+
+    <div class="form-group">
+        <div class="">
+            <button type="submit" class="btn btn-block btn-white" name="submitAction" value="Save">${msg("doSave")}</button>
+            <button type="submit" class="btn btn-block btn-white" name="submitAction" value="Cancel">${msg("doCancel")}</button>
         </div>
-    </form>
+    </div>
+</form>
     </#if>
 
 </@layout.mainLayout>

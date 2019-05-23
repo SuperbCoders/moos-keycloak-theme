@@ -38,7 +38,7 @@
 
     <form action="${url.sessionsUrl}" method="post">
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
-        <button id="logout-all-sessions" class="btn btn-default">${msg("doLogOutAllSessions")}</button>
+        <button id="logout-all-sessions" class="btn btn-block btn-white">${msg("doLogOutAllSessions")}</button>
     </form>
 
 </@layout.mainLayout>

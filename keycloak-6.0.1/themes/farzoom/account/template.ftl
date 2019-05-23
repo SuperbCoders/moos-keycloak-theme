@@ -20,7 +20,6 @@
     </#if>
 </head>
 <body class="admin-console user ${bodyClass}">
-        
     <header class="navbar navbar-default navbar-pf navbar-main header">
         <nav class="navbar" role="navigation">
             <div class="navbar-header">
@@ -49,10 +48,7 @@
                 </div>
             </div>
         </nav>
-    </header>
-
-    <div class="container">
-        <div class="bs-sidebar col-sm-3">
+        <div class="bs-sidebar">
             <ul>
                 <li class="<#if active=='account'>active</#if>"><a href="${url.accountUrl}">${msg("account")}</a></li>
                 <#if features.passwordUpdateSupported><li class="<#if active=='password'>active</#if>"><a href="${url.passwordUrl}">${msg("password")}</a></li></#if>
@@ -63,20 +59,26 @@
                 <#if features.log><li class="<#if active=='log'>active</#if>"><a href="${url.logUrl}">${msg("log")}</a></li></#if>
             </ul>
         </div>
+    </header>
+    <div class="fr-app fr-main">
+        <div class="fr-fullpage">
+            <div class="centred-message-container">
+                <div class="container">
+                    <div class="col-sm-9 content-area">
+                        <#if message?has_content>
+                            <div class="alert alert-${message.type}">
+                                <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>
+                                <#if message.type=='error' ><span class="pficon pficon-error-octagon"></span><span class="pficon pficon-error-exclamation"></span></#if>
+                                ${message.summary?no_esc}
+                            </div>
+                        </#if>
 
-        <div class="col-sm-9 content-area">
-            <#if message?has_content>
-                <div class="alert alert-${message.type}">
-                    <#if message.type=='success' ><span class="pficon pficon-ok"></span></#if>
-                    <#if message.type=='error' ><span class="pficon pficon-error-octagon"></span><span class="pficon pficon-error-exclamation"></span></#if>
-                    ${message.summary?no_esc}
+                        <#nested "content">
+                    </div>
                 </div>
-            </#if>
-
-            <#nested "content">
+            </div>
         </div>
     </div>
-
 </body>
 </html>
 </#macro>
