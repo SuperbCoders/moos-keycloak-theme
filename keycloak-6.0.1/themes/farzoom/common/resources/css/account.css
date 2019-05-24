@@ -44,3 +44,16 @@
     color: white;
     padding: 10px;
 }
+
+.admin-console .icon {
+    position: absolute;
+    font-size: 16px;
+    color: #7e7c86;
+}
+
+.admin-console .icon-eye {
+    top: 70px;
+    right: 20px;
+    color: #616065;
+    cursor: pointer;
+}

@@ -6,10 +6,21 @@
 
         <#if password.passwordSet>
             <div class="form-group">
+                <span class="icon icon-eye"></span>
                 <input type="password" class="form-control form-control--transporent" id="password" name="password" placeholder="${msg("password")}" autofocus autocomplete="current-password">
             </div>
         </#if>
-
+        <script type="text/javascript">
+            const classname = document.querySelector('.icon-eye');
+            classname.addEventListener("click", function() {
+                const $password = document.getElementById("password");
+                if ($password.type === 'password') {
+                    $password.type = 'text';
+                } else {
+                    $password.type = 'password';
+                }
+            }, false);
+        </script>
         <input type="hidden" id="stateChecker" name="stateChecker" value="${stateChecker}">
 
 
